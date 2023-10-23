@@ -1,7 +1,7 @@
 /* Background-related */
 body {
      /* Happens over 5 min */
-    animation: changeBackground 450s linear;
+    animation: changeBackground 2000s linear;
     background: #BA4A1F;
     font-family: 'Playpen Sans', cursive;
 }
