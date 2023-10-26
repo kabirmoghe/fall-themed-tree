@@ -1,11 +1,13 @@
 /* Background-related */
 body {
      /* Happens over 5 min */
-    animation: changeBackground 2000s linear;
+    animation: changeBackground 200s linear;
     background: #BA4A1F;
     font-family: 'Playpen Sans', cursive;
+
 }
 
+/* Changing background color */
 @keyframes changeBackground {
     0% {background: #ADD08E;}
     50% {background: #D5C46D;}
@@ -36,7 +38,8 @@ body {
     font-size:30px;
     font-weight:100;
     margin-top:10px;
-    color: #5e4747;
+    color: #7A3115;
+    animation: changeFontColor 200s linear;
 }
 
 #bioContainer {
@@ -47,11 +50,11 @@ body {
 
 #bio {
     width: 700px;
-    /* font-family: 'Quicksand', sans-serif; */
     font-size:20px;
     font-weight:100;
     margin-top:30px;
-    color: #5e4747;   
+    color: #7A3115;   
+    animation: changeFontColor 200s linear;
 }
 
 #pfpContainer {
@@ -75,7 +78,23 @@ body {
     margin-top: 20px;
 }
 
-#Layer_1 {
-    fill: #5e4747;
+/* Changing font color */
+@keyframes changeFontColor {
+    0% {color: #697D57;}
+    50% {color: #817743;}
+    100% {color: #7A3115;}
 }
 
+/* Linkedin */
+#Layer_1 {
+    fill: #7A3115;
+    animation: changeFill 200s linear;
+
+}
+
+/* Changing svg fill */
+@keyframes changeFill {
+    0% {fill: #697D57;}
+    50% {fill: #817743;}
+    100% {fill: #7A3115;}
+}
