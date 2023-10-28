@@ -1,18 +1,19 @@
 
-/* Background-related */
-body {
-    /* Happens over 5 min */
-   animation: changeBackground 200s linear;
-   background: #BA4A1F;
-   font-family: 'Playpen Sans', cursive;
-
-}
+/* -- Background-related -- */
 
 /* Changing background color */
 @keyframes changeBackground {
-   0% {background: #ADD08E;}
-   50% {background: #D5C46D;}
-   100% {background: #BA4A1F;}
+    0% {background: #ADD08E;}
+    50% {background: #D5C46D;}
+    100% {background: #BA4A1F;}
+ }
+ 
+body {
+    /* Happens over 5 min */
+   animation: changeBackground 220s linear;
+   background: #BA4A1F;
+   font-family: 'Playpen Sans', cursive;
+
 }
 
 /* Tree-related */
@@ -31,7 +32,25 @@ body {
    cursor: pointer; 
 }
 
-/* Content-related */
+#prompt {
+    display: none;
+    font-size: 12px;
+    color: #697D57;
+    font-weight: 100;
+    position: absolute;
+    padding-right: 110px;
+    transform: rotate(20deg);
+}
+
+/* -- Content-related -- */
+
+/* Changing font color */
+@keyframes changeFontColor {
+    0% {color: #697D57;}
+    50% {color: #817743;}
+    100% {color: #7A3115;}
+ }
+
 #title {
    display: flex;
    align-items: center;
@@ -77,13 +96,6 @@ body {
    justify-content: center;
    height:50px;
    margin-top: 20px;
-}
-
-/* Changing font color */
-@keyframes changeFontColor {
-   0% {color: #697D57;}
-   50% {color: #817743;}
-   100% {color: #7A3115;}
 }
 
 /* Linkedin */
