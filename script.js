@@ -127,16 +127,13 @@ function findLeavesToChange() {
         allChangingLeaves.push(chosenLeaf);
         i++;
     }
-    if (leafDelta < 15) { leafDelta = Math.ceil(leafDelta*1.2);}
-    
-    console.log(leafDelta)
+    if (leafDelta < 15) { leafDelta = Math.ceil(leafDelta*1.2);}    
 }
 
 // Function for change leaves over time
 function changeLeaves() {
 
     if (allChangingLeaves.length < numChoices) {
-        console.log(numChoices - allChangingLeaves.length);
         // Iterates through each leaf to change and changes its color randomly
         currLeaves.forEach(function(currLeaf) {
             let colorChoice = distr[Math.floor(Math.random()*distr.length)];
@@ -153,7 +150,6 @@ function changeLeaves() {
             }
         });
     } else {
-        console.log("Leaves have changed!");
     }
 
     delta = Math.floor(Math.random()*3) + 2; // creates a new random delta for time between leaves' changes
