@@ -1,100 +1,113 @@
-/* Background-related */
-body {
-     /* Happens over 5 min */
-    animation: changeBackground 200s linear;
-    background: #BA4A1F;
-    font-family: 'Playpen Sans', cursive;
 
-}
+/* -- Background-related -- */
 
 /* Changing background color */
 @keyframes changeBackground {
     0% {background: #ADD08E;}
     50% {background: #D5C46D;}
     100% {background: #BA4A1F;}
+ }
+ 
+body {
+    /* Happens over 5 min */
+   animation: changeBackground 220s linear;
+   background: #BA4A1F;
+   font-family: 'Playpen Sans', cursive;
+
 }
 
 /* Tree-related */
 .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    margin-top:80px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   height: 300px;
+   margin-top:80px;
 }
 
- .leaf {
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-    cursor: pointer; 
+.leaf {
+   -webkit-transition: background-color 1000ms linear;
+   -ms-transition: background-color 1000ms linear;
+   transition: background-color 1000ms linear;
+   cursor: pointer; 
 }
 
-/* Content-related */
-#title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:30px;
-    font-weight:100;
-    margin-top:10px;
-    color: #7A3115;
-    animation: changeFontColor 200s linear;
+#prompt {
+    display: none;
+    font-size: 12px;
+    color: #697D57;
+    font-weight: 100;
+    position: absolute;
+    padding-right: 110px;
+    transform: rotate(20deg);
 }
 
-#bioContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#bio {
-    width: 700px;
-    font-size:20px;
-    font-weight:100;
-    margin-top:30px;
-    color: #7A3115;   
-    animation: changeFontColor 200s linear;
-}
-
-#pfpContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    margin-top: 80px
-}
-
-#pfp {
-    height: 100px;
-    width: auto;
-}
-
-#contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    margin-top: 20px;
-}
+/* -- Content-related -- */
 
 /* Changing font color */
 @keyframes changeFontColor {
     0% {color: #697D57;}
     50% {color: #817743;}
     100% {color: #7A3115;}
+ }
+
+#title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size:30px;
+   font-weight:100;
+   margin-top:10px;
+   color: #7A3115;
+   animation: changeFontColor 200s linear;
+}
+
+#bioContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#bio {
+   width: 700px;
+   font-size:20px;
+   font-weight:100;
+   margin-top:30px;
+   color: #7A3115;   
+   animation: changeFontColor 200s linear;
+}
+
+#pfpContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:50px;
+   margin-top: 80px
+}
+
+#pfp {
+   height: 100px;
+   width: auto;
+}
+
+#contact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:50px;
+   margin-top: 20px;
 }
 
 /* Linkedin */
 #Layer_1 {
-    fill: #7A3115;
-    animation: changeFill 200s linear;
+   fill: #7A3115;
+   animation: changeFill 200s linear;
 
 }
 
 /* Changing svg fill */
 @keyframes changeFill {
-    0% {fill: #697D57;}
-    50% {fill: #817743;}
-    100% {fill: #7A3115;}
+   0% {fill: #697D57;}
+   50% {fill: #817743;}
+   100% {fill: #7A3115;}
 }
