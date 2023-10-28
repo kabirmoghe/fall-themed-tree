@@ -57,7 +57,7 @@ for (let i = 0; i < numLeaves; i++) {
 }
 
 // Shows prompt for user to click a leaf
-$("#prompt").delay(2000).fadeIn("fast").delay(10000).fadeOut("fast");
+$("#prompt").delay(2000).fadeIn("slow").delay(5000).fadeOut("slow");
 
 /* ------- Leaves changing ------- */
 
@@ -117,7 +117,7 @@ function pickLeaf() {
     }
 }
 
-// Function for reselecting leaves to change
+// Function for reselcting leaves to change
 function findLeavesToChange() {
     let numToChange = Math.floor(Math.random()*5) + 2 + leafDelta;
     let i = 0;
@@ -130,7 +130,7 @@ function findLeavesToChange() {
     if (leafDelta < 15) { leafDelta = Math.ceil(leafDelta*1.2);}    
 }
 
-// Function for changing leaves over time
+// Function for change leaves over time
 function changeLeaves() {
 
     if (allChangingLeaves.length < numChoices) {
@@ -152,9 +152,9 @@ function changeLeaves() {
     } else {
     }
 
-    delta = Math.floor(Math.random()*3) + 2; // Creates a new random delta for time between leaves' changes
-    currLeaves = []; // Resets current list to empty
-    findLeavesToChange() // Finds new leaves to change
+    delta = Math.floor(Math.random()*3) + 2; // creates a new random delta for time between leaves' changes
+    currLeaves = []; // resets current list to empty
+    findLeavesToChange() // finds new leaves to change
 }
 
 // Set the interval to change leaves via changeLeaves every delta seconds
