@@ -57,7 +57,7 @@ for (let i = 0; i < numLeaves; i++) {
 }
 
 // Shows prompt for user to click a leaf
-$("#prompt").delay(2000).fadeIn("fast").delay(10000).fadeOut("fast");
+$("#prompt").delay(2000).fadeIn("slow").delay(5000).fadeOut("slow");
 
 /* ------- Leaves changing ------- */
 
