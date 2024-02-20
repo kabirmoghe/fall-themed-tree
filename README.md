@@ -1,5 +1,5 @@
 # DALI Theme Challenge - Kabir Moghe
-Hi, I'm Kabir Moghe! This is my DALI developer challenge site. It's a relatively simple fall-themed site that changes colors over time and provides a quick background on my interests.
+Hi, I'm Kabir Moghe! This is my DALI developer challenge site (applying for 24W). It's a relatively simple fall-themed site that changes colors over time and provides a quick background on my interests.
 
 ## Structure & Functionality
 The site isn't dynamic per se, but with JS + jQuery, the app changes the tree's colors in a natural way. Other than that, there are a few graphics and an HTML file for the homepage. 
